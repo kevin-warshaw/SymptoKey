@@ -24,4 +24,5 @@ urlpatterns = [
     path('checkin/', views.DisplayAppointment),
     path('followup/', views.DisplayCallDoctor),
     path('rest/', views.DisplayLowRisk),
+    path('bleeding/', views.Hemorrage),
 ]
