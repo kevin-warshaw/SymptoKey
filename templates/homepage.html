@@ -8,7 +8,7 @@
 Welcome to SymptoKey -- if at any time you are unable to continue the form because of how you're feeling, or begin to feel much worse, call 911 immediately.
 <br>
 <br>
-<form action="/action_page.php" method="post" id="nameform">
+<div  method="post" id="nameform">
   Age:<br>
     <input type="number" id="age" name="How old are you?"><br>
   What is your sex assigned at birth?:<br>
@@ -19,62 +19,8 @@ Welcome to SymptoKey -- if at any time you are unable to continue the form becau
     <input type="number" id="inches" name="How tall are you?"><br>
   Weight(lbs):<br>
     <input type="number" id="weight" name="How much do you weigh?"><br>
-</form>
+</div>
 
-<button type="submit" form="nameform" value="Save and Continue">Save and Continue</button>
-<br>
-
-<form action="/action_page.php" method="post" id="breathing">
-    Are you having any difficulty breathing?:<br>
-    <input type="radio" id="trouble" name="breathing" value="Yes"> Yes<br>
-    <input type="radio" name="breathing" value="No"> No<br>
-</form>
-<br>
-<br>
-<form action="/action_page.php" method="post" id="bleeding"/>
-    Are you visibly bleeding?:<br>
-    <input type="radio" id="bleeding" name="bleeding" value="Yes"> Yes<br>
-    <input type="radio" name="bleeding" value="No"> No<br>
-</form>
-<br>
-<br>
-
-<fieldset action="/action_page.php" method="post" id="whatsWrong">
-    <legend>What's wrong?</legend>
-
-    <div>
-        <input type="checkbox" id="dizzy" name="feature" value="I'm feeling dizzy" />
-        <label for="I'm feeling dizzy">I'm feeling dizzy</label>
-    </div>
-
-    <div>
-
-        <input type="checkbox" id="pain" name="feature"
-               value="I'm in pain" />
-        <label for="I'm in pain">I'm in pain</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="hurtAccident" name="feature"
-               value="I hurt myself on accident" />
-        <label for="I hurt myself on accident">I hurt myself on accident</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="hurtIntentional" name="feature"
-               value="I hurt myself on purpose" />
-        <label for="I hurt myself on purpose">I hurt myself on purpose</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="other" name="feature"
-               value="Something Else" />
-        <label for="Something Else">Something Else</label>
-    </div>
-
-</fieldset>
-
-<button type="submit" form="whatswrong" value="Save and Continue">Save and Continue</button>
-
+<button type="submit" form="nameform" value="Save and Continue" onclick="location.href='bleeding.html'">Save and Continue</button>
 </body>
 </html>
