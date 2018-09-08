@@ -20,7 +20,7 @@ from SymptoKey import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('quiz/', views.UpdateChoices),
-    path('emergency/', views.DisplayEmergencyPage),
+    #path('emergency/', views.DisplayEmergencyPage),
     path('checkin/', views.DisplayAppointment),
     path('followup/', views.DisplayCallDoctor),
     path('rest/', views.DisplayLowRisk),

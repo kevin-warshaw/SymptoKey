@@ -7,6 +7,10 @@ def UpdateChoices(request):
     block = request.POST.get['id']
     StoreInfo(request, block)
 
+def Hemorrage(request):
+    if request.POST.get('click', False):
+        return render(request, "emergency.html")
+
 # Update relevant variables
 def StoreInfo(request, block):
     if (block == "I'm feeling dizzy"):
