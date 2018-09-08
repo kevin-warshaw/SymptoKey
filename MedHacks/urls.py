@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from SymptoKey import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('quiz/', views.UpdateChoices),
+    path('emergency/', views.DisplayEmergencyPage),
+    path('checkin/', views.DisplayAppointment),
+    path('followup/', views.DisplayCallDoctor),
+    path('rest/', views.DisplayLowRisk),
 ]
