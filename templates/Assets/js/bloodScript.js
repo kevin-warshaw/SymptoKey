@@ -1,14 +1,14 @@
-$('volume').click(Hemorrage(request)) {
+$('volume').click(function() {
     $.ajax({
-        url: emergency.html,
+        url: "localhost:63342/bleeding",
         method: 'POST',
         data: {
-            name: value, 
+            name: value,
             click: true
-        }
+        },
         success: function (data) {
-            // success callback
-            // you can process data returned by function from views.py
+            alert("hello world")
+            //localhost/Hemorrage(request);
         }
     });
 });
