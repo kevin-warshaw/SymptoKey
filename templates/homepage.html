@@ -5,15 +5,18 @@
     <title>SymptoKey is here to help!</title>
 </head>
 <body>
-Welcome to SymptoKey -- if at any time you are unable to continue the form, or begin to feel much worse, call 911 immediately.
+Welcome to SymptoKey -- if at any time you are unable to continue the form because of how you're feeling, or begin to feel much worse, call 911 immediately.
 <br>
 <br>
 <form action="/action_page.php" method="post" id="nameform">
   Age:<br>
-  <input type="text" name="How old are you?"><br>
+    <input type="number" name="How old are you?"><br>
   Biological Sex:<br>
-  <input type="radio" name="gender" value="male"> Male<br>
-    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="male"> Male<br> <input type="radio" name="gender" value="female"> Female<br>
+  Height:<br>
+    <input type="text" name="How tall are you?"><br>
+  Weight:<br>
+    <input type="number" name="How much do you weigh?"><br>
 </form>
 
 <button type="submit" form="nameform" value="Save and Continue">Save and Continue</button>
@@ -48,6 +51,18 @@ Welcome to SymptoKey -- if at any time you are unable to continue the form, or b
     </div>
 
     <div>
+        <input type="checkbox" id="I hurt myself on accident" name="feature"
+               value="I hurt myself on accident" />
+        <label for="I hurt myself on accident">I hurt myself on accident</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="I hurt myself on purpose" name="feature"
+               value="I hurt myself on purpose" />
+        <label for="I hurt myself on purpose">I hurt myself on purpose</label>
+    </div>
+
+    <div>
         <input type="checkbox" id="Something Else" name="feature"
                value="Something Else" />
         <label for="Something Else">Something Else</label>
@@ -56,6 +71,8 @@ Welcome to SymptoKey -- if at any time you are unable to continue the form, or b
 </fieldset>
 
 <button type="submit" form="whatswrong" value="Save and Continue">Save and Continue</button>
+
+
 
 </body>
 </html>
