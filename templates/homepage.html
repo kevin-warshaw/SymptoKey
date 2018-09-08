@@ -8,25 +8,58 @@
 Welcome to SymptoKey -- if at any time you are unable to continue the form, or begin to feel much worse, call 911 immediately.
 <br>
 <br>
-<form>
-    id="basicinfo"
+<form action="/action_page.php" method="post" id="nameform">
   Age:<br>
   <input type="text" name="How old are you?"><br>
   Biological Sex:<br>
-  <input type="radio" name="gender" value="male"> Male<br> <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
 </form>
 
-<form>
-    id="breathing"
+<button type="submit" form="nameform" value="Save and Continue">Save and Continue</button>
+<br>
+
+<form action="/action_page.php" method="post" id="breathing">
     Are you having any difficulty breathing?:<br>
-    <input type="radio" name="breathing" value="Yes"> Yes<br> <input type="radio" name="breathing" value="No"> No<br>
+    <input type="radio" name="breathing" value="Yes"> Yes<br>
+    <input type="radio" name="breathing" value="No"> No<br>
 </form>
 
-<form>
-    id="bleeding"
+<button type="submit" form="breathing" value="Save and Continue">Save and Continue</button>
+<br>
+
+<form action="/action_page.php" method="post" id="bleeding"/>
     Are you visibly bleeding?:<br>
-    <input type="radio" name="bleeding" value="Yes"> Yes<br> <input type="radio" name="bleeding" value="No"> No<br>
+    <input type="radio" name="bleeding" value="Yes"> Yes<br>
+    <input type="radio" name="bleeding" value="No"> No<br>
 </form>
+<br>
+<button type="submit" form="bleeding" value="Save and Continue">Save and Continue</button>
+<br>
+<br>
+<fieldset action="/action_page.php" method="post" id="whatswrong">
+    <legend>What's wrong?</legend>
+
+    <div>
+        <input type="checkbox" id="I'm feeling dizzy" name="feature" value="I'm feeling dizzy" checked />
+        <label for="I'm feeling dizzy">I'm feeling dizzy</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="I'm in pain" name="feature"
+               value="I'm in pain" />
+        <label for="I'm in pain">I'm in pain</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="Something Else" name="feature"
+               value="Something Else" />
+        <label for="Something Else">Something Else</label>
+    </div>
+
+</fieldset>
+
+<button type="submit" form="whatswrong" value="Save and Continue">Save and Continue</button>
 
 
 
