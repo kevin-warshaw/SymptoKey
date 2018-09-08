@@ -8,7 +8,7 @@
 Welcome to SymptoKey -- if at any time you are unable to continue the form because of how you're feeling, or begin to feel much worse, call 911 immediately.
 <br>
 <br>
-<div id="nameform">
+<div  method="post" id="nameform">
   Age:<br>
     <input type="number" id="age" name="How old are you?"><br>
   What is your sex assigned at birth?:<br>
@@ -66,6 +66,6 @@ Welcome to SymptoKey -- if at any time you are unable to continue the form becau
 </fieldset>
 
 <button type="submit" form="whatswrong" value="Save and Continue">Save and Continue</button>
-
+<button type="submit" form="nameform" value="Save and Continue" onclick="location.href='bleeding.html'">Save and Continue</button>
 </body>
 </html>
